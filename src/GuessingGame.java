@@ -19,15 +19,15 @@ public class GuessingGame extends JFrame {
 		try {
 			int guess = Integer.parseInt(guessText);
 			if (guess < theNumber)
-				message = guess + " меньше загаданного числа. Попробуйте еще раз.";
+				message = guess + " РјРµРЅСЊС€Рµ Р·Р°РіР°РґР°РЅРЅРѕРіРѕ С‡РёСЃР»Р°. РџРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰Рµ СЂР°Р·.";
 			else if (guess > theNumber)
-				message = guess + " больше загаданного числа. Попробуйте еще раз.";
+				message = guess + " Р±РѕР»СЊС€Рµ Р·Р°РіР°РґР°РЅРЅРѕРіРѕ С‡РёСЃР»Р°. РџРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰Рµ СЂР°Р·.";
 			else {
-				message = guess + " - это верно. Вы выиграли! Давай сыграем еще раз!";
+				message = guess + " - СЌС‚Рѕ РІРµСЂРЅРѕ. Р’С‹ РІС‹РёРіСЂР°Р»Рё! Р”Р°РІР°Р№ СЃС‹РіСЂР°РµРј РµС‰Рµ СЂР°Р·!";
 				newGame();
 			}
 		} catch (Exception e) {
-			message = "Введите целое число от 1 до 100.";
+			message = "Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 100.";
 		} finally {
 			lblOutput.setText(message);
 			txtGuess.requestFocus();
